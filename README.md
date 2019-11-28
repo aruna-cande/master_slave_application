@@ -33,11 +33,11 @@ python test_master.py
 ```
 
 
-#Slave application
+# Slave application
 The Slave app sends a GET request to https://postman-echo.com/delay/<seconds> where <seconds> is a random number from 1 to 5, check the response status and exit with zero code if postman-echo responded with 200 status code, or exit with 1 code if status code is not equal 200. The Slave app exits with code 2 in case of any network errors.
 
 
-##Configuration file
+## Configuration file
 The file with name slave.ini contains the configurations necessary to run the application
 
 ```ini
@@ -54,14 +54,14 @@ def postmanEchoRequest(self):
         baseUrl = config['DEFAULT']['BaseUrl']
 ```
 
-##Run
+## Run
 To execute the application you should execute the following command after configuration is correctly set:
 
 ```bash
 python slave.py -d value
 ```
 
-##Test
+## Test
 
 To execute the test run the following command:
 ```bash
